@@ -5,7 +5,8 @@ class CreateExpenses < ActiveRecord::Migration
       t.date :date
       t.string :concept
       t.decimal :amount
-      t.references :user, foreign_key: true
+      t.references :user, foreign_key:true
+
 
       t.timestamps null: false
     end

@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20190427135439) do
     t.date     "date"
     t.string   "concept"
     t.decimal  "amount"
+    t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.index ["category_id"], name: "index_expenses_on_category_id"
